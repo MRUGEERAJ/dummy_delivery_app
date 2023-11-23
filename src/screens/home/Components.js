@@ -1,10 +1,9 @@
 import { useNavigation } from "@react-navigation/native";
 import { memo, useState } from "react";
-import { Dimensions, Image, Pressable, Text, View } from "react-native";
+import { Image, Pressable, Text, View } from "react-native";
 import { useDispatch, useSelector } from "react-redux";
 import { setCartItems, setItem } from "./homeSlice";
 import _ from 'lodash';
-const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get("window");
 
 export const OffersCard = memo(({color}) => {
   return (
